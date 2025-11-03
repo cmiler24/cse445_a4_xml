@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- (1) Root element name is WRONG: should be <Hotels> -->
+<Hotel xmlns="https://cmiler24.github.io/cse445_a4_xml"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="https://cmiler24.github.io/cse445_a4_xml https://cmiler24.github.io/cse445_a4_xml/Hotels.xsd">
+
+	<!-- OK record (baseline) -->
+	<Hotel Rating="4.2">
+		<Name>Westin</Name>
+		<Phone>480-968-8885</Phone>
+		<Phone>800-937-8461</Phone>
+		<Address NearestAirport="Phoenix Sky Harbor International Airport">
+			<Number>11</Number>
+			<Street>E. 7th St</Street>
+			<City>Tempe</City>
+			<State>AZ</State>
+			<Zip>85281</Zip>
+		</Address>
+	</Hotel>
+
+	<!-- (2) Missing REQUIRED attribute NearestAirport on Address -->
+	<Hotel Rating="4.8">
+		<Name>The Plaza Hotel</Name>
+		<Phone>212-759-3000</Phone>
+		<Phone>212-546-5200</Phone>
+		<Address>
+			<Number>768</Number>
+			<Street>5th Ave</Street>
+			<City>New York</City>
+			<State>NY</State>
+			<Zip>10019</Zip>
+		</Address>
+	</Hotel>
+
+	<!-- (3) Missing a Phone element entirely (minOccurs=1 violated) -->
+	<Hotel>
+		<Name>Bellagio Las Vegas</Name>
+		<Address NearestAirport="Harry Reid International Airport">
+			<Number>3600</Number>
+			<Street>S Las Vegas Blvd</Street>
+			<City>Las Vegas</City>
+			<State>NV</State>
+			<Zip>89109</Zip>
+		</Address>
+	</Hotel>
+
+	<!-- (4) Address element has NO CLOSING TAG (well-formedness error) -->
+	<Hotel Rating="4.7">
+		<Name>Fairmont San Francisco</Name>
+		<Phone>415-772-5000</Phone>
+		<Phone>415-772-5260</Phone>
+		<Address NearestAirport="San Francisco International Airport">
+			<Number>950</Number>
+			<Street>Mason St</Street>
+			<City>San Francisco</City>
+			<State>CA</State>
+			<Zip>94108</Zip>
+		</Hotel>
+
+	<!-- (5) Two Name elements provided for one hotel -->
+	<Hotel>
+		<Name>Hotel del Coronado</Name>
+		<Name>The Real Hotel del Coronado</Name>
+		<Phone>619-435-6611</Phone>
+		<Address NearestAirport="San Diego International Airport">
+			<Number>1500</Number>
+			<Street>Orange Ave</Street>
+			<City>Coronado</City>
+			<State>CA</State>
+			<Zip>92118</Zip>
+		</Address>
+	</Hotel>
+
+	<Hotel Rating="4.6">
+		<Name>The Broadmoor</Name>
+		<Phone>719-634-7711</Phone>
+		<Phone>855-634-7711</Phone>
+		<Address NearestAirport="Colorado Springs Airport">
+			<Number>1</Number>
+			<Street>Lake Ave</Street>
+			<City>Colorado Springs</City>
+			<State>CO</State>
+			<Zip>80906</Zip>
+		</Address>
+	</Hotel>
+
+	<Hotel>
+		<Name>The Ritz-Carlton, Chicago</Name>
+		<Phone>312-266-1000</Phone>
+		<Address NearestAirport="O'Hare International Airport">
+			<Number>160</Number>
+			<Street>E Pearson St</Street>
+			<City>Chicago</City>
+			<State>IL</State>
+			<Zip>60611</Zip>
+		</Address>
+	</Hotel>
+
+	<Hotel Rating="4.9">
+		<Name>Waldorf Astoria Beverly Hills</Name>
+		<Phone>310-860-6666</Phone>
+		<Address NearestAirport="Los Angeles International Airport">
+			<Number>9850</Number>
+			<Street>Wilshire Blvd</Street>
+			<City>Beverly Hills</City>
+			<State>CA</State>
+			<Zip>90210</Zip>
+		</Address>
+	</Hotel>
+
+	<Hotel>
+		<Name>The Phoenician, a Luxury Collection Resort</Name>
+		<Phone>480-941-8200</Phone>
+		<Address NearestAirport="Phoenix Sky Harbor International Airport">
+			<Number>6000</Number>
+			<Street>E Camelback Rd</Street>
+			<City>Scottsdale</City>
+			<State>AZ</State>
+			<Zip>85251</Zip>
+		</Address>
+	</Hotel>
+
+	<Hotel Rating="4.5">
+		<Name>Biltmore Hotel Coral Gables</Name>
+		<Phone>305-445-8066</Phone>
+		<Address NearestAirport="Miami International Airport">
+			<Number>1200</Number>
+			<Street>Anastasia Ave</Street>
+			<City>Coral Gables</City>
+			<State>FL</State>
+			<Zip>33134</Zip>
+		</Address>
+	</Hotel>
+
+	<Hotel>
+		<Name>The Peabody Memphis</Name>
+		<Phone>901-529-4000</Phone>
+		<Address NearestAirport="Memphis International Airport">
+			<Number>149</Number>
+			<Street>Union Ave</Street>
+			<City>Memphis</City>
+			<State>TN</State>
+			<Zip>38103</Zip>
+		</Address>
+	</Hotel>
+
+	<Hotel Rating="4.6">
+		<Name>The Phoenician (Camelback Inn)</Name>
+		<Phone>480-948-1700</Phone>
+		<Address NearestAirport="Phoenix Sky Harbor International Airport">
+			<Number>5402</Number>
+			<Street>E Lincoln Dr</Street>
+			<City>Scottsdale</City>
+			<State>AZ</State>
+			<Zip>85253</Zip>
+		</Address>
+	</Hotel>
+
+</Hotel>
