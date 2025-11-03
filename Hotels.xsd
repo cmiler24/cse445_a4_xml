@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           targetNamespace="https://github.com/cmiler24/cse445_a4_xml"
+           targetNamespace="https://cmiler24.github.io/cse445_a4_xml"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified">
 
@@ -57,4 +57,5 @@
   </xs:simpleType>
 
 </xs:schema>
+
 
