@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Hotels xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="https://cmiler24.github.io/cse445_a4_xml https://cmiler24.github.io/cse445_a4_xml/Hotels.xsd"
-		xmlns="https://cmiler24.github.io/cse445_a4_xml">
+<Hotels xmlns="https://cmiler24.github.io/cse445_a4_xml"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="https://cmiler24.github.io/cse445_a4_xml https://cmiler24.github.io/cse445_a4_xml/Hotels.xsd">
 	
 	<!-- Figure 1 example -->
 	<Hotel Rating="4.2">
@@ -164,4 +164,5 @@
 	</Hotel>
 
 </Hotels>
+
 
