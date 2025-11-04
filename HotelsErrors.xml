@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!-- (1) Root element name is WRONG: should be <Hotels> -->
-<Hotel xmlns="https://cmiler24.github.io/cse445_a4_xml"
+<Hotel  xmlns="https://cmiler24.github.io/cse445_a4_xml"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="https://cmiler24.github.io/cse445_a4_xml https://cmiler24.github.io/cse445_a4_xml/Hotels.xsd">
 
@@ -157,3 +157,4 @@
 	</Hotel>
 
 </Hotel>
+
